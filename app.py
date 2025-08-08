@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return jsonify({"message": "Welcome to the Python app on Elastic Beanstalk!"})
+    return render_template('login.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
